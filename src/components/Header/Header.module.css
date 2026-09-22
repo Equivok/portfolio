@@ -1,0 +1,101 @@
+.header {
+  position: fixed;
+  top: max(0px, var(--safe-top));
+  left: 2%;
+  right: 2%;
+  z-index: 30;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-dark);
+  width: 100%;
+  max-width: 900px;
+  margin: 12px auto 0;
+  padding: 14px 20px;
+  border-radius: 60px;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    margin: 20px auto 0;
+    padding: 22px 32px;
+  }
+}
+
+.brand {
+  font-family: var(--font-head);
+  color: var(--rouge);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  .brand {
+    font-size: 22px;
+  }
+}
+
+.brand span {
+  color: var(--creme);
+}
+
+.menu {
+  display: flex;
+  gap: 12px;
+}
+
+@media (min-width: 480px) {
+  .menu {
+    gap: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu {
+    gap: 28px;
+  }
+}
+
+.menu button {
+  position: relative;
+  font-family: var(--font-tag);
+  font-weight: 800;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 2px;
+  min-height: 44px;
+}
+
+@media (min-width: 768px) {
+  .menu button {
+    font-size: 1rem;
+  }
+}
+
+.menu button:hover,
+.menu button:focus-visible {
+  color: var(--text);
+}
+
+.menu button::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  border-radius: 6px;
+  background: var(--rouge);
+  transition: width 0.3s ease;
+}
+
+.menu button:hover::after,
+.menu button:focus-visible::after {
+  width: 100%;
+}

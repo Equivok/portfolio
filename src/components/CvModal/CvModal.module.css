@@ -1,0 +1,155 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+  padding-right: 40px;
+}
+
+.title {
+  font-family: var(--font-head);
+  font-size: clamp(1.3rem, 4vw, 1.6rem);
+  margin: 0 0 4px;
+}
+
+.role {
+  color: var(--rose);
+  font-family: var(--font-tag);
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.tagline {
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0 0 28px;
+}
+
+.downloadBtn {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  padding: 11px 20px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--orange);
+  background: var(--orange);
+  color: #171308;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  white-space: nowrap;
+}
+
+.downloadBtn:hover,
+.downloadBtn:focus-visible {
+  background: #f0af52;
+  border-color: #f0af52;
+}
+
+.section {
+  margin-bottom: 28px;
+}
+
+.sectionTitle {
+  font-family: var(--font-tag);
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  color: var(--bleu);
+  margin: 0 0 14px;
+}
+
+.experience {
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 18px;
+}
+
+.experience:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.experienceHead {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.experienceRole {
+  font-weight: 700;
+  margin: 0;
+}
+
+.experienceMeta {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.experience ul {
+  margin: 8px 0 0;
+  padding-left: 20px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.education {
+  margin-bottom: 10px;
+}
+
+.education:last-child {
+  margin-bottom: 0;
+}
+
+.educationTitle {
+  font-weight: 700;
+  margin: 0;
+}
+
+.educationMeta {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin: 2px 0 0;
+}
+
+.skillGroups {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 600px) {
+  .skillGroups {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.skillGroupTitle {
+  font-weight: 700;
+  margin: 0 0 8px;
+  font-size: 0.9rem;
+}
+
+.skillTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skillTags span {
+  font-family: var(--font-tag);
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 4px 12px;
+}

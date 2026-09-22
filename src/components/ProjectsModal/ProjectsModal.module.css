@@ -1,0 +1,90 @@
+.eyebrow {
+  color: var(--bleu);
+  font-family: var(--font-tag);
+  font-size: 0.78rem;
+  margin: 0 0 8px;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: var(--font-head);
+  font-size: clamp(1.3rem, 4vw, 1.6rem);
+  margin: 0 0 18px;
+  padding-right: 40px;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.slideTitle {
+  font-family: var(--font-head);
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.summary {
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 4px 0 0;
+}
+
+.tags span {
+  font-family: var(--font-tag);
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 4px 12px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.btn {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  padding: 11px 20px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  border-color: var(--text-muted);
+}
+
+.btnPrimary {
+  background: var(--orange);
+  border-color: var(--orange);
+  color: #171308;
+  font-weight: 600;
+}
+
+.btnPrimary:hover,
+.btnPrimary:focus-visible {
+  background: #f0af52;
+  border-color: #f0af52;
+}

@@ -1,0 +1,87 @@
+.carousel {
+  position: relative;
+}
+
+.track {
+  display: flex;
+  border-radius: var(--radius-sm);
+  touch-action: pan-y;
+}
+
+.slide {
+  flex: 0 0 100%;
+  width: 100%;
+  padding: 36px;
+}
+
+.slide img,
+.slide video {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  background: var(--bg-panel-2);
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.arrow {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--bg-panel-2);
+  color: var(--text);
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow:hover,
+.arrow:focus-visible {
+  border-color: var(--text-muted);
+}
+
+.arrow:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.dots {
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dot::after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--line);
+}
+
+.dot[aria-current='true']::after {
+  background: var(--rouge);
+}
