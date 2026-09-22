@@ -1,0 +1,102 @@
+.wrap {
+  position: relative;
+  width: 100%;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  padding: max(96px, calc(80px + var(--safe-top))) 24px calc(40px + var(--safe-bottom));
+  background: radial-gradient(circle at 50% 0%, var(--bg-dark), var(--bg-deep) 70%);
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Illustration légère 100% CSS/SVG (aucun runtime 3D chargé) */
+.illustration {
+  width: min(220px, 60vw);
+  height: min(220px, 60vw);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 12px 30px rgba(0, 0, 0, 0.35));
+}
+
+.illustration svg {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  font-family: var(--font-head);
+  font-size: clamp(1.4rem, 6vw, 1.9rem);
+  margin: 0;
+}
+
+.subtitle {
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
+  max-width: 320px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 320px;
+}
+
+.actionBtn {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  padding: 14px 20px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line);
+  background: var(--bg-panel-2);
+  color: var(--text);
+  cursor: pointer;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.actionBtn:hover,
+.actionBtn:focus-visible {
+  border-color: var(--text-muted);
+}
+
+.actionBtn--primary {
+  background: var(--orange);
+  border-color: var(--orange);
+  color: #171308;
+  font-weight: 600;
+}
+
+.actionBtn--primary:hover,
+.actionBtn--primary:focus-visible {
+  background: #f0af52;
+  border-color: #f0af52;
+}
+
+.sceneToggle {
+  margin-top: 8px;
+  color: var(--text-muted);
+  font-family: var(--font-tag);
+  font-size: 0.8rem;
+  background: none;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+  min-height: 44px;
+  padding: 6px 8px;
+}
+
+.sceneToggle:hover,
+.sceneToggle:focus-visible {
+  color: var(--text);
+}

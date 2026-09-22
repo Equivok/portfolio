@@ -66,6 +66,12 @@ body { overflow-x: hidden; }
   text-align: left;
 }
 
+/* Wrapper neutre autour du contenu principal (ancre du skip-link),
+   ne doit pas perturber le layout flex de #root. */
+#main-content {
+  display: contents;
+}
+
 img, video { max-width: 100%; display: block; }
 
 button, input, textarea { font-family: inherit; }

@@ -1,0 +1,1 @@
+export { MobileHero } from './MobileHero';
