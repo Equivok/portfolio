@@ -18,6 +18,17 @@ export function Header({ onOpen }: HeaderProps) {
         <div className={styles.brand}>
           A<span>GRANDJEAN</span>
         </div>
+        <div className={styles.menu}>
+          <button type="button" onClick={() => onOpen('projets')}>
+            Projets
+          </button>
+          <button type="button" onClick={() => onOpen('cv')}>
+            CV
+          </button>
+          <button type="button" onClick={() => onOpen('contact')}>
+            Contact
+          </button>
+        </div>
       </nav>
     </header>
   );
